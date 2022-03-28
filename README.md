@@ -1,7 +1,11 @@
 # Este es mi primer cambio
 
-## Otro cambio
+## npm 
+para crear el package.json ejecutamos el npm init
 
-### Es otra linea
+para instalar un modulo npm install NOMBRE
 
-#### Cambio en el clonar
+para instalar dependecias npm install
+
+
+

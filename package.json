@@ -11,5 +11,8 @@
     "url": "(https://github.com/UrielRozic/ortefsi1.git)"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
