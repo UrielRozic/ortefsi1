@@ -8,6 +8,7 @@ const requestListener = function (req, res) {
     res.end("My first server");
 };
 
+//esto inicia el servidor
 const server = http.createServer(requestListener);
 
 server.listen(port, host, () =>{
