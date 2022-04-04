@@ -15,16 +15,33 @@ server.listen(port, host, () =>{
     console.log(`server is running on http://${host}:${port}`);
 });*/
 
-var lista = [11,33,2,-1,110,99,8];
-let numMayor = 0;
-let segundoMayor = 0;
+//Esto no funciona porque sort() ordena alfabeticamente 
+//console.log(odds.sort(compare));
 
-for(let i = 0;i< lista.length;i++){
-    let e = lista[i];
-    if(e % 2 != 0 && e > numMayor){
-        numMayor = e;
-    }else if(e % 2 != 0 && e < numMayor && e > segundoMayor){
-        segundoMayor = e;
+//const proc = odds.sort(compare).reverse();
+
+//console.log(odds.sort(function compare(a,b));
+
+const data = [11,33,2,-1,110,99,8];
+let odds = [];
+
+for(let i = 0;i< data.length;i++){
+    const element = data[i];
+    if(element % 2 !== 0){
+        odds.push(element);
     }
-    console.log(segundoMayor);
+    
 }
+
+odds.sort(function(a, b) {
+    if (a < b) {
+      return 1;
+    }
+    if (a > b) {
+      return -1;
+    }
+    // a debe ser igual b
+    return 0;
+  });
+
+  console.log(odds[i]);
